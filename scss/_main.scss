@@ -1,0 +1,14 @@
+.book-list{
+  .author{
+    position: relative;
+    .drop{
+      display: none;
+      background: #b8f3ff;
+      border: 1px solid #4ecaff;
+      border-radius: 4px;
+      &.active{
+        display: block;
+      }
+    }
+  }
+}

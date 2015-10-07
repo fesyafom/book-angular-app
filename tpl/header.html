@@ -1,0 +1,6 @@
+<nav ng-controller="Header as header">
+    <ul class="nav nav-pills nav-stacked">
+        <li ng-class="{active : header.isCurrentPage('/')}"><a href="#/">Список книг</a></li>
+        <li ng-class="{active : header.isCurrentPage('/author-list')}"><a href="#/author-list">Список авторов</a></li>
+    </ul>
+</nav>

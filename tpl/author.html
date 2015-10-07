@@ -1,0 +1,14 @@
+<div ng-controller="Author as theauthor">
+    <article>
+        <h1>{{theauthor.author.name}}</h1>
+        <blockquote>{{theauthor.author.biography}}</blockquote>
+    </article>
+    <div class="book-list">
+        <div>Список книг:</div>
+        <ul>
+            <li ng-repeat="books in theauthor.author.books">
+                <h3 class="title"><a href="#/book/{{books.id}}">{{books.title}}</a></h3>
+            </li>
+        </ul>
+    </div>
+</div>

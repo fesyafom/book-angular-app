@@ -1,0 +1,8 @@
+<div ng-controller="Books as thebook">
+    <article>
+        <h1>{{thebook.book.title}}</h1>
+        <div><a href="#/author/{{thebook.book.authorID}}">{{thebook.book.author}}</a></div>
+        <div><a href="#/category/{{thebook.book.categoryID}}">{{thebook.book.category}}</a></div>
+        <blockquote>{{thebook.book.description}}</blockquote>
+    </article>
+</div>

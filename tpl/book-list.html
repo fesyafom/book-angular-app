@@ -1,0 +1,12 @@
+<div ng-controller="BooksList as books">
+    <h1>Список книг</h1>
+    <ul>
+        <li ng-repeat="book in books.list" class="col-md-6">
+            <div class="thumbnail text-center">
+                <a href="#/book/{{book.id}}"><img src="{{book.image}}" alt="{{book.title}}"/></a>
+                <h3 class="title"><a href="#/book/{{book.id}}">{{book.title}}</a></h3>
+                <div><a href="#/author/{{book.authorID}}">{{book.author}}</a></div>
+            </div>
+        </li>
+    </ul>
+</div>

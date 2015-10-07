@@ -1,0 +1,20 @@
+<div ng-controller="Authors as author">
+    <div class="book-list">
+        <h1>Список авторов:</h1>
+        <ul>
+            <li class="col-md-6 " ng-repeat="theauthor in author.list">
+                <div class="author thumbnail text-center" ng-click="author.subMenu($event)">
+                    <h3>{{theauthor.name}}</h3>
+                    <span class="drop text-left">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="#/author/{{theauthor.id}}">Смотреть профиль</a></li>
+                            <li ng-repeat="booksData in theauthor.books">
+                                <a href="#/book/{{booksData.id}}">{{booksData.title}}</a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
